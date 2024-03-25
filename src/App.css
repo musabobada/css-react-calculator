@@ -1,0 +1,62 @@
+.container {
+  box-shadow: 2px 10px 10px #999;
+  width: fit-content;
+  user-select: none;
+}
+body {
+  height: 150vh;
+}
+.grid {
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: grid;
+  gap: 10px 20px;
+  grid-template: repeat(5, 35px) / repeat(4, 50px);
+  background-color: #ef4971;
+  box-shadow: 0 5px #ec1a4c;
+}
+.button:nth-of-type(2) {
+  grid-column: span 3;
+}
+.button {
+  position: relative;
+  cursor: pointer;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+  background-color: #28567d;
+  box-shadow: 0 3px #213d5c;
+  transition: all 0.3s;
+}
+.button:active {
+  top: 2px;
+}
+.button:hover {
+  background-color: #213d5c;
+  box-shadow: 0 3px #172b41;
+}
+.operation {
+  color: #333;
+  font-weight: normal;
+  background-color: #fed168;
+  box-shadow: 0 3px #cb8715;
+}
+.operation:hover {
+  background-color: #e6ba55;
+  box-shadow: 0 3px #8b5d0d;
+}
+.result {
+  cursor: default;
+  justify-content: end;
+  padding-right: 10px;
+  box-shadow: inset 2px 2px #7a1f3f, inset -2px 0px #7a1f3f;
+}
+.result:active {
+  top: 0;
+}
+.result:hover {
+  background-color: #28567d;
+  box-shadow: inset 2px 2px #7a1f3f, inset -2px 0px #7a1f3f;
+}
